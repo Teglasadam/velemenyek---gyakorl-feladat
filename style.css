@@ -24,3 +24,20 @@ body {
     height: 200px;
     border-radius: 100%;
 }
+.buttons {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+.back,
+.next {
+    user-select: none;
+    margin: 0 30px;
+    padding: 5px 25px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
