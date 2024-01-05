@@ -12,7 +12,7 @@ const velemenyek = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatem rerum quasi sequi ea deleniti cumque vero sint alias, quo eveniet pariatur laborum magni impedit dolorum? Earum illo corporis fuga.",
   },
   {
-    nev: "Török Bálint",
+    nev: "Kiss Ivett",
     munkakor: "Automata Tesztelő",
     velemeny:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatem rerum quasi sequi ea deleniti cumque vero sint alias, quo eveniet pariatur laborum magni impedit dolorum? Earum illo corporis fuga.",
@@ -28,6 +28,7 @@ let felhasznalo = () => {
   let output = "";
 
   output += `<div class="order">
+  		<img class="profil" src="${[id]}.jpg" alt="xxx">
         <p><strong>${velemenyek[id].nev}</strong></p>
         <p><strong>${velemenyek[id].munkakor}</strong></p>
         <p><strong>${velemenyek[id].velemeny}</strong></p>
@@ -47,6 +48,7 @@ next.addEventListener("click", function () {
     felhasznalo();
   }
 });
+
 back.addEventListener("click", function () {
   if (id > 0) {
     id--;
